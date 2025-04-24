@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Home Rentals</title>
+    <style>
+        /* Global Colors */
+        :root {
+            --black: #000000;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --dark-gray: #333333;
+        }
+
+        /* Body Style */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Links */
+        a {
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--gold);
+        }
+
+        /* Headings */
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif; /* Elegant serif font for headings */
+            color: var(--black);
+            margin: 20px 0;
+        }
+
+        /* CTA Buttons */
+        button {
+            background-color: var(--gold);
+            color: var(--white);
+            border: 2px solid var(--gold);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--white);
+            color: var(--gold);
+            border-color: var(--black);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            background-image: url('path-to-your-image.jpg'); /* Replace with actual image path */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            font-size: 18px;
+            padding: 15px 30px;
+            background-color: var(--gold);
+            color: var(--white);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: var(--white);
+            color: var(--gold);
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: var(--black);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            color: var(--white);
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Gold accent in footer links */
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Inputs */
+        form {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid var(--black);
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form input:focus {
+            border-color: var(--gold);
+            outline: none;
+        }
+
+        form button {
+            background-color: var(--gold);
+            color: var(--white);
+            border: 2px solid var(--gold);
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: var(--white);
+            color: var(--gold);
+            border-color: var(--black);
+        }
+
+        /* Footer Contact Links */
+        .footer-contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-contact li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .footer-contact a {
+            color: var(--gold);
+            font-size: 14px;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Next Home Away From Home Starts Here</h1>
+            <p>Explore our luxury homes in the best locations</p>
+            <button>Check Availability</button>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luxury Homes. All rights reserved.</p>
+            <div class="footer-contact">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
